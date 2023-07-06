@@ -1,0 +1,274 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Akaya+Kanadaka&family=Cabin&family=Cinzel&family=Exo+2&family=Francois+One&family=Lilita+One&family=Montserrat:wght@100&family=Nerko+One&family=Oleo+Script&family=Oswald:wght@300&family=Patua+One&family=Permanent+Marker&family=Roboto&family=Satisfy&family=Shojumaru&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html, body{
+    overflow-x:hidden;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-size: 12px;
+    /* color:#222; */
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: #465b46;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+.bi {
+    font-size: 20px;
+}
+.logo{
+    font-size:25px;
+    color: black;
+    text-decoration: none;
+    font-family:cursive;
+    font-weight: bold;
+    color:orangered;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    /* gap:2rem; */
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    /* position:relative; */
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.menu {
+    display: none;
+}
+.myproduct {
+    width: 100%;
+}
+
+.myproduct .card img {
+    max-width:100%;
+    height:230px;
+}
+
+#navbar li a:hover {
+    color: #088178;
+}
+
+#navbar li a.active {
+    color: #088178;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding:20px 80px; */
+    padding: 20px 40px;
+    background: #E3E6F3;
+    width: 100%;
+    position: relative;
+    top: 0;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.06);
+    z-index: 9999;
+
+}
+
+
+#page-header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.herzindagi.info/image/2022/Oct/how-to-do-shopping.jpg");
+    width:100%;
+    height:40vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding:14px;
+}
+#page-header h2 , #page-header p{
+    color:#fff;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color:#088178;
+    padding:15px 20px;
+    border-radius:4px;
+    color:white;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size:16px;
+    font-weight:600;
+}
+#header .logo{
+font-size:25px;
+
+}
+.producttext {
+    text-align: center;
+    padding-top: 10px;
+}
+.card1 {
+    border: 1px solid black;
+    background-color: lightcoral;
+
+}
+.bi-star-fill {
+    color: rgb(243, 181, 25);
+}
+.bi-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #088178;
+    background-color: white;
+    border-radius: 12px;
+    width: 44px;
+    height: 37px;
+    text-align: center;
+    font-size: 22px;
+}
+.myfooter {
+    font-family: sans-serif;
+}
+
+.myfooter .nav .nav-link {
+    color: black;
+}
+
+.myfooter .nav .nav-link:hover {
+    color: #088178
+}
+
+.icons .bi{
+    background-color:#088178;
+    padding:.5rem .4rem;
+    font-size:17px;
+    color:White;
+    border-radius:50%;
+}
+@media only screen and (max-width:768px) {
+    .menu {
+        display: flex;
+        align-items: center;
+       
+    }
+    
+  
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position:absolute;
+        top:70px;  
+        right:0;
+    transform:translate(500px);
+        height:100vh;
+        width:220px;
+        opacity:0;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.4);
+        padding: 80px 0px 10px;  
+          transition:0.2s ease-in;
+      z-index:99999;
+        
+    }
+    #navbar.activenow{
+        opacity:1;
+        transform:translate(0px);
+ 
+
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+ 
+
+
+    .menubar {
+        position: absolute;
+        top: 29;
+        left:81%;
+     
+    }
+
+    .removecard {
+        /* display: block; */
+        position: absolute;
+        /* top:25; */
+        /* left:81%; */
+        color: #222;
+        font-size: 20px;
+        display: flex;
+        z-index:-1;
+        border:none;
+        overflow:hidden;
+/* list-style: none; */
+text-decoration: none;
+    }
+
+    .menu .menubar {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and(min-width:425px) and (min-width:425px){
+    #navbar{
+        height:50%;
+    }
+}
+
